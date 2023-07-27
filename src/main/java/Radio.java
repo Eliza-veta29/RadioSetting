@@ -8,27 +8,27 @@ public class Radio {
         } else if (station > 9) {
             return;
         } else {
-            currentStation = station;
+            currentRadioStation = station;
         }
     }
 
     public int getCurrentRadioStation() {
-        return currentStation;
+        return currentRadioStation;
     }
 
     public void nextRadioStation() {
-        if (currentStation == 9) {
-            currentStation = 0;
+        if (currentRadioStation == 9) {
+            currentRadioStation = 0;
         } else {
-            currentStation++;
+            currentRadioStation++;
         }
     }
 
     public void prevRadioStation() {
-        if (currentStation == 0) {
-            currentStation = 9;
+        if (currentRadioStation == 0) {
+            currentRadioStation = 9;
         } else {
-            currentStation--;
+            currentRadioStation--;
         }
     }
 
